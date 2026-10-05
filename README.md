@@ -21,30 +21,6 @@ The model predicts four classes:
 - Very Mild Demented
 The class ordering is obtained from the dataset for the training pipeline and is explicitly defined in the XAI inference interface.
 
-
-System Workflow
-MRI Brain Image
-      │
-      ▼
-CLAHE Contrast Enhancement
-      │
-      ▼
-Resize to 224 × 224
-      │
-      ▼
-Normalization
-      │
-      ▼
-Vision Transformer (ViT-Tiny)
-      │
-      ├──────────────► Predicted Class
-      │
-      ▼
-Grad-CAM
-      │
-      ▼
-Visual Heatmap / Explanation
-
 Dataset
 The training notebook uses the Kaggle dataset:
 alzheimers-multiclass-dataset-equal-and-augmented
